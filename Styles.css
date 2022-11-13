@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+body{
+      background-image: radial-gradient(circle at 50% 50%, #9632ec 0, #7a23e3 50%, #5914da 100%);
+}
+
+.navbar{
+      width: 100%;
+      background-color: aqua;
+      height: 90px;
+}
+
+.logo img{
+      width: 70px;
+      height: 70px;
+      margin: 10px;
+      border-radius: 20%;
+}
+
+.search{
+      align-content: center;
+}
+
+
+/* A media query. It is used to apply different styles for different media types/devices. For example,
+you can have a media query that will only apply the styles when the device's width is less than
+1024px. */
+@media (max-width : 1024){ 
+
+}
+
+@media (max-width : 768){
+
+}
+
+@media (max-width : 320){
+
+}
