@@ -1,0 +1,23 @@
+::-webkit-scrollbar { width: 4px; color: rgb(72, 19, 128); }
+::-webkit-scrollbar-thumb { background: rgb(72, 19, 128); border-radius: 4px; width: 4px; }
+#breaker { background-color: rgb(72, 19, 128); }
+.color { color: rgb(72, 19, 128); }
+#about-content a { color: rgb(72, 19, 128); }
+.cv a button { background: rgb(72, 19, 128); }
+.service-img img { background: rgb(72, 19, 128); box-shadow: rgb(72, 19, 128) 0px 0px 0px 0px; }
+.service:hover .service-img img { box-shadow: rgb(72, 19, 128) 0px 0px 0px 400px; }
+.html-progress { background: rgb(72, 19, 128); }
+.js-progress { background: rgb(72, 19, 128); }
+.adobe-progress { background: rgb(72, 19, 128); }
+.php-progress { background: rgb(72, 19, 128); }
+.jquery-progress { background: rgb(72, 19, 128); }
+.seo-progress { background: rgb(72, 19, 128); }
+.portfolio-text h2 { color: rgb(72, 19, 128); }
+.portfolio-text button { color: rgb(72, 19, 128); border: 1.5px solid rgb(72, 19, 128); }
+.portfolio-text button::before { background: rgb(72, 19, 128); }
+.portfolio-image img::before { background: rgb(72, 19, 128); }
+.blog-date { background: rgb(72, 19, 128); }
+form button { background: rgb(72, 19, 128); }
+@media (max-width: 550px) and (min-width: 5px) {
+  .service:hover .service-img img { box-shadow: rgb(199, 0, 57) 0px 0px 0px 0px; }
+}
