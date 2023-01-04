@@ -574,6 +574,17 @@ body{
     text-align: center;
     padding:2.5%;
 }
+
+.skills-contenido{
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding:2.5%;
+}
 .service{
     height:380px;
     width:28%;
@@ -691,7 +702,7 @@ body{
     align-items: center;
     justify-content: center;
     transition: all .4s ease;
-    width:95%;
+    width:50%;
     border-radius: 10px;
     background: #c70039;
 }
@@ -811,6 +822,10 @@ padding-bottom: 40px;
     background: #080808;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+#pSolution{
+    font-size: 18px;
 }
 
 .portfolio-text h2{
@@ -2279,7 +2294,7 @@ for tabs and large phones
 @media all and (max-width: 9000px) and (min-width: 1441px){
 
     .portfolio-image img{
-        height: 500px;
+        height: 450px;
         width: 100%;
         position: relative;
     }
