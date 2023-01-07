@@ -1535,11 +1535,14 @@ For devices with smaller width like mobile phone
     .prog{
         height:30px;
     }
-    .skills-content{
+    .skills-contenido{
         height: auto;
         width:100%;
         margin-top: 20px;
         margin-bottom: 15px;
+        display:flex;
+        flex-direction: column;
+
     }
     .portfolio{
         height:auto;
@@ -2014,6 +2017,9 @@ for tabs and large phones
         width:100%;
         margin-top: 20px;
         margin-bottom: 15px;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
     }
     .portfolio{
         height:auto;
