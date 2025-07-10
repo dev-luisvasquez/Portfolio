@@ -1,0 +1,21 @@
+---
+import ButtonAction from "../atoms/buttonAction.astro";
+import ButtonSocialMedia from "../atoms/buttonSocialMedia.astro";
+---
+
+<div class="flex flex-col gap-6 text-white p-4 w-1/2">
+    <div class="flex flex-col gap-2">
+        <label class="text-5xl font-bold">¡Hola!</label>
+        <h1 class="text-5xl font-bold">Soy Luis Vásquez</h1>
+    </div>
+
+    <p class="text-lg font-light text-gray-300">
+        Soy desarrollador frontend y cofundador de NEOS AI con 2 años de
+        experiencia en la creación de aplicaciones web.
+    </p>
+    <div class="flex gap-4">
+        <ButtonSocialMedia iconButton="/src/assets/icons/githubIcon.svg" />
+        <ButtonSocialMedia iconButton="/src/assets/icons/linkedinIcon.svg" />
+    </div>
+    <ButtonAction text="Ver mis proyectos" icon="arrowRightIcon" href="#projects" />
+</div>

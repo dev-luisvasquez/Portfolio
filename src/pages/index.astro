@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/organisms/header.astro";
+import MyInfo from "../components/organisms/myInfo.astro";
+import Projects from "../pages/projects.astro";
+import ScrollToTopButton from "../components/atoms/scrollToTopButton.astro";
+---
+
+<Layout>
+	<div
+		class="w-full h-[100vh] md:h-4/12 bg-cover relative"
+		style={`background-image: url('/src/assets/backgrounds/background.svg');`}
+	>
+		<div class="inset-0">
+			<Header />
+			<div class="flex items-center justify-center mt-5">
+				<MyInfo />
+			</div>
+		</div>
+		<!-- Overlay para el degradado -->
+		<div class="absolute bottom-0 left-0 w-full h-40" style="background: linear-gradient(to bottom, transparent, #030020);"></div>
+	</div>
+	<div class="w-full h-[100vh] md:h-4/12" style="background-color: #030020;" id="projects">
+		<Projects />
+	</div>
+	<ScrollToTopButton />
+</Layout>
