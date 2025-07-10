@@ -1,0 +1,15 @@
+---
+import DownloadIcon from "../../assets/icons/downloadIcon.svg";
+---
+
+<div class="flex items-center gap-2">
+    <a href="/public/cv/Cv_LuisVasquez.pdf" download>
+        <button class="group w-60 bg-transparent text-white border-2 border-white px-4 py-2 rounded-full flex items-center justify-center gap-2 relative overflow-hidden transition-all duration-300 hover:text-black hover:border-transparent">
+            <span class="relative z-10 flex items-center gap-2">
+                <DownloadIcon class="w-5 h-5 transition-all duration-300 group-hover:fill-black" />
+                Descargar CV
+            </span>
+            <div class="absolute inset-0 w-0 bg-gradient-to-r from-custom-1 via-custom-6 to-custom-2 group-hover:animate-fill"></div>
+        </button>
+    </a>
+</div>

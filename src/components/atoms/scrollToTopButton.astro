@@ -1,0 +1,45 @@
+---
+---
+<button
+  id="scrollToTop"
+  class="fixed bottom-5 right-5 bg-custom-6 text-white p-3 rounded-full shadow-lg transition-all duration-300 opacity-0 translate-y-10 hover:bg-custom-4"
+  aria-label="Volver arriba"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="h-6 w-6"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M5 10l7-7m0 0l7 7m-7-7v18"
+    />
+  </svg>
+</button>
+
+<script>
+  const scrollToTopButton = document.getElementById('scrollToTop');
+
+  // Mostrar/ocultar el botón basado en el scroll
+  window.addEventListener('scroll', () => {
+    if (scrollToTopButton) {
+      if (window.scrollY > 200) {
+        scrollToTopButton.classList.remove('opacity-0', 'translate-y-10');
+      } else {
+        scrollToTopButton.classList.add('opacity-0', 'translate-y-10');
+      }
+    }
+  });
+
+  // Manejar el click para scroll suave hacia arriba
+  scrollToTopButton?.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script> 

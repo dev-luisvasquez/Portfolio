@@ -1,0 +1,13 @@
+---
+const { iconButton } = Astro.props;
+---
+
+<div class="relative  rounded-full w-[40px] h-[40px] flex items-center justify-center bg-custom-1 hover:bg-custom-4 transition-colors duration-300 ease-in-out group">
+   <button class="w-full h-full flex items-center justify-center">
+    <img 
+      src={iconButton} 
+      alt="icon" 
+      class="w-[30px] h-[30px] object-cover transform group-hover:scale-110 transition-transform duration-300 ease-in-out" 
+    />
+   </button>
+</div>
