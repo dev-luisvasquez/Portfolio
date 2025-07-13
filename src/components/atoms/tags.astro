@@ -1,0 +1,18 @@
+---
+interface Tag {
+    name: string;
+    icon: string;
+    color: string;
+}
+
+const { tags } = Astro.props;
+---
+
+<div class="flex justify-start mt-2 gap-2">
+    {tags.map((tag: Tag) => (
+        <span style={`background-color: ${tag.color}`} class="text-sm text-gray-300 backdrop-blur-md border border-white/10 rounded-lg px-2 py-1 w-3/12 flex items-center gap-2">
+            <img src={tag.icon} alt={tag.name} class="w-4 h-4" />
+            {tag.name} 
+        </span>
+    ))}
+</div>
