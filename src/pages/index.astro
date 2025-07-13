@@ -7,20 +7,23 @@ import ScrollToTopButton from "../components/atoms/scrollToTopButton.astro";
 ---
 
 <Layout>
-	<div
-		class="w-full h-[100vh] md:h-4/12 bg-cover relative"
-		style={`background-image: url('/src/assets/backgrounds/background.svg');`}
-	>
-		<div class="inset-0">
+	<div class="w-full h-[100vh] md:h-4/12 relative max-w-7xl mx-auto">
+		<!-- Fondo con blur -->
+		<div 
+			class="fixed top-0 left-0 w-full h-screen blur-2xl bg-cover z-0"
+			style={`background-image: url('/src/assets/backgrounds/background.svg');`}
+		/>
+		<!-- Contenido sin blur -->
+		<div class="relative z-10">
 			<Header />
 			<div class="flex items-center justify-center mt-5">
 				<MyInfo />
 			</div>
 		</div>
 		<!-- Overlay para el degradado -->
-		<div class="absolute bottom-0 left-0 w-full h-40" style="background: linear-gradient(to bottom, transparent, #030020);"></div>
+		
 	</div>
-	<div class="w-full h-[100vh] md:h-4/12" style="background-color: #030020;" id="projects">
+	<div class="w-full h-[100vh] md:h-4/12 relative z-10 px-4" id="projects">
 		<Projects />
 	</div>
 	<ScrollToTopButton />

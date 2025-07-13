@@ -1,0 +1,24 @@
+{
+    "projects": [
+        {
+            "title": "Saas NEOS AI (Producción)",
+            "description": "Plataforma innovadora de prevención de riesgos en construcción que integra gestión manual y detección automatizada en tiempo real mediante sistemas de IA y videovigilancia",
+            "image": "/projects/neos.png",
+            "link": "https://www.google.com",
+            "tags": [
+                {
+                    "name": "react",
+                    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+                    "background": "#61DAFB",
+                    "color": "#000"
+                },
+                {
+                    "name": "tailwind",
+                    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+                    "background": "#38BDF8",
+                    "color": "#000"
+                }
+            ]
+        }
+    ]
+}

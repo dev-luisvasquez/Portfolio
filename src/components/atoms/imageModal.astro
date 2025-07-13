@@ -1,0 +1,40 @@
+---
+interface Props {
+    image: string;
+    title: string;
+    isOpen: boolean;
+}
+
+const { image, title, isOpen } = Astro.props;
+---
+
+<div id="imageModal" class={`fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+    <div class="relative max-w-[90vw] max-h-[90vh]">
+        <button id="closeModal" class="absolute -top-10 right-0 text-white hover:text-gray-300 text-3xl">&times;</button>
+        <img src={image} alt={title} class="max-w-full max-h-[85vh] object-contain rounded-lg" />
+    </div>
+</div>
+
+<script>
+    const modal = document.getElementById('imageModal');
+    const closeButton = document.getElementById('closeModal');
+    
+    // Close modal when clicking the close button
+    closeButton?.addEventListener('click', () => {
+        modal?.classList.add('opacity-0', 'pointer-events-none');
+    });
+
+    // Close modal when clicking outside the image
+    modal?.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+        }
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal) {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+        }
+    });
+</script> 
