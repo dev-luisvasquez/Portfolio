@@ -1,27 +1,35 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+module.exports = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   theme: {
     extend: {
-      colors: {
-        'custom-1': '#95c6fc',
-        'custom-2': '#e89afc',
-        'custom-3': '#d296fc',
-        'custom-4': '#b9aafc',
-        'custom-5': '#bae4fc',
-        'custom-6': '#c49cfc'
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      keyframes: {
-        'fill-button': {
-          '0%': { width: '0%' },
-          '100%': { width: '100%' }
-        }
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          sm: "2rem",
+          lg: "3rem",
+          xl: "4rem",
+          "2xl": "4rem",
+          "3xl": "5rem",
+        },
       },
-      animation: {
-        'fill': 'fill-button 0.4s ease-in-out forwards'
-      }
+
+      extend: {
+        screens: {
+          "4k": "1980px",
+        },
+      },
     },
   },
   plugins: [],
 }
-
