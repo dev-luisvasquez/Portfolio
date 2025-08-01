@@ -13,7 +13,6 @@
     "@emailjs/browser": "^4.3.1",
     "@next/third-parties": "15.1.1",
     "axios": "^1.6.8",
-    "flowbite": "^3.1.2",
     "lottie-react": "^2.4.1",
     "next": "15.1.1",
     "nodemailer": "^6.9.15",
@@ -23,8 +22,7 @@
     "react-google-recaptcha": "^3.1.0",
     "react-icons": "^4.11.0",
     "react-toastify": "^10.0.4",
-    "sharp": "^0.33.5",
-    "tw-elements": "^2.0.0"
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "autoprefixer": "latest",
