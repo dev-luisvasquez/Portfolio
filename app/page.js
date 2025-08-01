@@ -6,7 +6,7 @@ import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
 import Footer from "./components/footer";
-import 'flowbite';
+
 
 export default async function Home() {
 
