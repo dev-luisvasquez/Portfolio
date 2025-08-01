@@ -4,13 +4,6 @@ import Link from "next/link";
 import React from "react";
 
 function Navbar() {
-  function handleSmoothScroll(e, id) {
-    e.preventDefault();
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
-  }
 
   return (
     <nav className="bg-transparent">
@@ -34,7 +27,7 @@ function Navbar() {
               <a
                 href={`#${id}`}
                 className="block px-4 py-2 no-underline outline-none hover:no-underline cursor-pointer"
-                onClick={(e) => handleSmoothScroll(e, id)}
+               
               >
                 <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
                   {label}
