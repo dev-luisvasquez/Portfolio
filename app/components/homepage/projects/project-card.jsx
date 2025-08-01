@@ -1,4 +1,4 @@
-// @flow strict
+
 
 import * as React from 'react';
 import CarouselComponet from './carousel';

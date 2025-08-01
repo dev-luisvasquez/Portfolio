@@ -1,4 +1,4 @@
-// @flow strict
+
 
 import Link from "next/link";
 
