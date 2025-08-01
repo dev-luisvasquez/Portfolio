@@ -8,15 +8,20 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 
-function handleSmoothScroll(e, id) {
-  e.preventDefault();
-  const el = document.getElementById(id);
-  if (el) {
-    el.scrollIntoView({ behavior: "smooth" });
-  }
-}
+
+
 
 function HeroSection() {
+  function handleSmoothScroll(e, id) {
+  e.preventDefault();
+
+  if (typeof window !== "undefined") {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+}
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
       <Image
