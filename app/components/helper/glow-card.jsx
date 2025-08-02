@@ -1,16 +1,11 @@
-'use client'
+"use client"
 
 import { useEffect } from 'react';
 
-const GlowCard = ({ children, identifier }) => {
+const GlowCard = ({ children , identifier}) => {
   useEffect(() => {
-  if (typeof window === 'undefined') return;
-
-  const timeout = setTimeout(() => {
     const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
     const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
-
-    if (!CONTAINER || !CARDS.length) return;
 
     const CONFIG = {
       proximity: 40,
@@ -42,7 +37,9 @@ const GlowCard = ({ children, identifier }) => {
         ];
 
         let ANGLE =
-          (Math.atan2(event?.y - CARD_CENTER[1], event?.x - CARD_CENTER[0]) * 180) / Math.PI;
+          (Math.atan2(event?.y - CARD_CENTER[1], event?.x - CARD_CENTER[0]) *
+            180) /
+          Math.PI;
 
         ANGLE = ANGLE < 0 ? ANGLE + 360 : ANGLE;
 
@@ -56,20 +53,20 @@ const GlowCard = ({ children, identifier }) => {
       CONTAINER.style.setProperty('--gap', CONFIG.gap);
       CONTAINER.style.setProperty('--blur', CONFIG.blur);
       CONTAINER.style.setProperty('--spread', CONFIG.spread);
-      CONTAINER.style.setProperty('--direction', CONFIG.vertical ? 'column' : 'row');
+      CONTAINER.style.setProperty(
+        '--direction',
+        CONFIG.vertical ? 'column' : 'row'
+      );
     };
 
     RESTYLE();
     UPDATE();
 
+    // Cleanup event listener
     return () => {
       document.body.removeEventListener('pointermove', UPDATE);
     };
-  }, 0); // Ejecuta en el siguiente tick del navegador
-
-  return () => clearTimeout(timeout);
-}, [identifier]);
-
+  }, [identifier]);
 
   return (
     <div className={`glow-container-${identifier} glow-container`}>
