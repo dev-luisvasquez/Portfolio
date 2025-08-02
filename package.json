@@ -33,8 +33,5 @@
     "postcss": "latest",
     "sass": "^1.69.5",
     "tailwindcss": "latest"
-  },
-  "plugins": [
-    "@netlify/next"
-  ]
+  }
 }
