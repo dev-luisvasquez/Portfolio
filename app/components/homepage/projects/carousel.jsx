@@ -10,7 +10,7 @@ const CarouselComponent = ({ images = [] }) => {
     setDirection('left');
     setActiveIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
-
+  
   const nextSlide = () => {
     setDirection('right');
     setActiveIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
