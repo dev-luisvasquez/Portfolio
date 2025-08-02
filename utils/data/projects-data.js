@@ -7,6 +7,7 @@ export const projectsData = [
         role: 'Full Stack Developer',
         code: '',
         demo: '',
+        tags: ['AI', 'IoT', 'Voice Recognition'],
         images: ['/projects/canaria/CanariaLogin.png', '/projects/canaria/CanariaPanel.png']
     },
     {
@@ -17,6 +18,7 @@ export const projectsData = [
         role: 'Estudiante',
         code: '',
         demo: '',
+        tags: ['Mobile App', 'Pet Services', 'E-commerce'],
         images: ['/projects/petwalk/petwalkApp.png']
     },
 ];
