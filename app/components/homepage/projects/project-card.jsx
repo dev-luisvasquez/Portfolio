@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-import CarouselComponet from './carousel';
+import CarouselWrapper from './CarouselWrapper';
 
 function ProjectCard({ project }) {
 
@@ -62,7 +62,7 @@ function ProjectCard({ project }) {
           </div>
            <div><span className="text-gray-400">{`};`}</span></div>
           <div className="ml-4 lg:ml-8 mr-2">
-            <CarouselComponet images={project.images} />
+            <CarouselWrapper images={project.images} />
           </div>
          
           
