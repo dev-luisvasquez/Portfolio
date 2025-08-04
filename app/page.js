@@ -8,6 +8,8 @@ import Skills from "./components/homepage/skills";
 import Footer from "./components/footer";
 
 export default async function Home() {
+  console.log('typeof document:', typeof document);
+
   return (
     <div suppressHydrationWarning>
       <HeroSection />
