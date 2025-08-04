@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-import CarouselWrapper from './CarouselWrapper';
+
 
 function ProjectCard({ project }) {
 
@@ -61,9 +61,9 @@ function ProjectCard({ project }) {
             <span className="text-cyan-400">{' ' + project.description}</span>
           </div>
            <div><span className="text-gray-400">{`};`}</span></div>
-          <div className="ml-4 lg:ml-8 mr-2">
+          {/* <div className="ml-4 lg:ml-8 mr-2">
             <CarouselWrapper images={project.images} />
-          </div>
+          </div> */}
          
           
         </code>
