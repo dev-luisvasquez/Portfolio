@@ -1,7 +1,7 @@
 
 import AboutSection from "./components/homepage/about";
 import ContactSection from "./components/homepage/contact";
-import Experience from "./components/homepage/experience";
+import ExperienceClientWrapper from "./components/ExperienceClientWrapper";
 import HeroSection from "./components/homepage/hero-section";
 import ProjectsClientWrapper from "./components/homepage/ProjectsClientWrapper";
 import Skills from "./components/homepage/skills";
@@ -12,7 +12,7 @@ export default async function Home() {
     <div suppressHydrationWarning>
       <HeroSection />
       <AboutSection />
-      <Experience />
+      <ExperienceClientWrapper />
       <Skills />
       <ProjectsClientWrapper /> {/* 👈 Solo este bloque se renderiza en el cliente */}
       <ContactSection />

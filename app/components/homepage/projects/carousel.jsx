@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 const CarouselComponent = ({ images = [] }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -38,10 +39,11 @@ const CarouselComponent = ({ images = [] }) => {
                 key={index}
                 className={`absolute w-full h-full top-0 left-0 ${position}`}
               >
-                <img
+                <Image
                   src={src}
                   className="block w-full h-full object-cover object-top"
                   alt={`Slide ${index + 1}`}
+                  layout="fill"
                 />
               </div>
             );
