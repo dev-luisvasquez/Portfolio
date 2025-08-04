@@ -4,7 +4,7 @@ import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
 import experience from '../../../assets/lottie/code.json';
 import AnimationLottie from "../../helper/animation-lottie";
-
+import GlowCard from "../../helper/glow-card";
 
 function Experience() {
   return (
@@ -39,7 +39,8 @@ function Experience() {
             <div className="flex flex-col gap-6">
               {
                 experiences.map(experience => (
-                    <div key={experience.id} className="p-3 relative">
+                  <GlowCard key={experience.id} identifier={`experience-${experience.id}`}>
+                    <div className="p-3 relative">
                       <Image
                         src="/blur-23.svg"
                         alt="Hero"
@@ -66,6 +67,7 @@ function Experience() {
                         </div>
                       </div>
                     </div>
+                  </GlowCard>
                 ))
               }
             </div>

@@ -1,9 +1,9 @@
 
 import AboutSection from "./components/homepage/about";
 import ContactSection from "./components/homepage/contact";
-import ExperienceClientWrapper from "./components/ExperienceClientWrapper";
+import Experience from "./components/homepage/experience";
 import HeroSection from "./components/homepage/hero-section";
-import ProjectsClientWrapper from "./components/homepage/ProjectsClientWrapper";
+import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
 import Footer from "./components/footer";
 
@@ -13,11 +13,10 @@ export default async function Home() {
     <div suppressHydrationWarning>
       <HeroSection />
       <AboutSection />
-      <ExperienceClientWrapper />
+      <Experience />
       <Skills />
-      <ProjectsClientWrapper /> {/* 👈 Solo este bloque se renderiza en el cliente */}
+      <Projects /> 
       <ContactSection />
-      <Footer />
     </div>
   )
 }
