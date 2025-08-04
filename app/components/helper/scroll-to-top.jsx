@@ -1,4 +1,5 @@
 
+"use client";
 import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa6";
 
