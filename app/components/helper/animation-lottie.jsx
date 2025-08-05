@@ -1,19 +1,15 @@
 'use client';
 
-import Lottie from "lottie-react";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
-const AnimationLottie = ({ animationPath, width }) => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationPath,
-    style: {
-      width: width || '95%',
-    }
-  };
-
+const AnimationLottie = () => {
   return (
-    <Lottie {...defaultOptions} />
+    <DotLottieReact
+      src="https://lottie.host/007c6671-3738-4e05-b918-386ff3dffbd5/4aGkT7nHSk.lottie"
+      loop
+      autoplay
+      style={{ width: '100%' }}
+    />
   );
 };
 
