@@ -3,8 +3,8 @@ import { experiences } from "@/utils/data/experience";
 import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
 import experience from '../../../assets/lottie/code.json';
-import AnimationLottie from "../../helper/animation-lottie";
-/* import GlowCard from "../../helper/glow-card"; */
+/* import AnimationLottie from "../../helper/animation-lottie"; */
+import GlowCard from "../../helper/glow-card";
 
 function Experience() {
   return (
@@ -31,7 +31,7 @@ function Experience() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <div className="flex justify-center items-start">
             <div className="w-full h-full">
-              <AnimationLottie animationPath={experience} />
+             {/*  <AnimationLottie animationPath={experience} /> */}
             </div>
           </div>
 
@@ -39,8 +39,8 @@ function Experience() {
             <div className="flex flex-col gap-6">
               {
                 experiences.map(experience => (
-                 /*  <GlowCard key={experience.id} identifier={`experience-${experience.id}`}> */
-                    <div key={experience.id} className="p-3 relative">
+                  <GlowCard key={experience.id} identifier={`experience-${experience.id}`}>
+                    <div className="p-3 relative">
                       <Image
                         src="/blur-23.svg"
                         alt="Hero"
@@ -67,7 +67,7 @@ function Experience() {
                         </div>
                       </div>
                     </div>
-                 /*  </GlowCard> */
+                  </GlowCard>
                 ))
               }
             </div>
