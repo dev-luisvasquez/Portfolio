@@ -14,7 +14,7 @@ export const projectsData = [
         id: 1,
         name: 'Petwalk APP | Tesis Final',
         description: "Aplicación móvil orientada al servicio de paseos de mascotas, que permite a los propietarios contratar paseadores, realizar pagos y gestionar sus reservas de manera eficiente. La plataforma cuenta con un panel administrativo para la gestión integral de usuarios y paseadores. El sistema opera mediante Petscoins, una moneda interna que los usuarios adquieren a través de la integración con WebPay y que puede ser canjeada por servicios de paseo.",
-        tools: ['Angular', 'Typescript', 'Bootstrap', 'MongoDB', 'Firebase'],
+        tools: ['Ionic', 'Angular', 'Typescript', 'Bootstrap', 'MongoDB', 'Firebase'],
         role: 'Estudiante',
         code: '',
         demo: '',
