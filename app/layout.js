@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Luis Vasquez - Software Developer",
   description:
-    "Soy desarrollador frontend autodidacta, apasionado por la tecnología y el aprendizaje constante. Me especializo en crear interfaces modernas y funcionales, con un enfoque en la experiencia de usuario. Aprendo rápido, disfruto asumir nuevos retos y colaborar en proyectos donde pueda aportar valor y seguir creciendo profesionalmente.",
+    "Soy desarrollador Fullstack autodidacta, apasionado por la tecnología y el aprendizaje constante. Me especializo en crear interfaces modernas y funcionales, con un enfoque en la experiencia de usuario. Aprendo rápido, disfruto asumir nuevos retos y colaborar en proyectos donde pueda aportar valor y seguir creciendo profesionalmente.",
 };
 
 export default function RootLayout({ children }) {

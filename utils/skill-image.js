@@ -82,6 +82,7 @@ import kubernetes from '../app/assets/svg/skills/kubernetes.svg'
 import linux from '../app/assets/svg/skills/linux.svg'
 import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
 import fastapi from '../app/assets/svg/skills/fastapi.svg'
+import nestjs from '../app/assets/svg/skills/nestjs.svg'
 
 
 
@@ -112,6 +113,8 @@ export const skillsImage = (skill) => {
       return nextJS;
     case 'nuxt js':
       return nuxtJS;
+    case 'nest js':
+      return nestjs;
     case 'react':
       return react;
     case 'svelte':
